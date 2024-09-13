@@ -1,0 +1,45 @@
+#container {  
+    display: flex;  
+    flex-direction: column;  
+    min-height: 100vh;  
+    background-color: lightblue;  
+    align-items: center;  
+    padding: 20px;  
+}  
+
+#input_personaje {  
+    width: 70%;  
+    min-height: 30px;  
+    border-radius: 10px;  
+    font-size: large;  
+    padding-left: 15px;  
+    font-family: 'Arial', sans-serif;  
+}  
+
+#button_search {  
+    width: 40%;  
+    min-height: 30px;  
+    border-radius: 8px;  
+    margin-top: 10px;  
+    font-size: 15px;  
+    cursor: pointer;  
+}  
+
+#character-information {  
+    width: 80%;  
+    height: 300px;  
+    background-color: white;  
+    margin-top: 20px;  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    border-radius: 9px;  
+    padding: 10px;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+}  
+
+#show-info {  
+    width: 80%;  
+    height: 80%;  
+    overflow-y: auto;  
+}
