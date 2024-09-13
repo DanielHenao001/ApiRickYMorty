@@ -1,7 +1,7 @@
 #container {  
     display: flex;  
     flex-direction: column;  
-    min-height: 100vh;  
+    min-height: 1000vh;  
     background-color: lightblue;  
     align-items: center;  
     padding: 20px;  
@@ -39,7 +39,7 @@
 }  
 
 #show-info {  
-    width: 80%;  
-    height: 80%;  
+    width: 50%;  
+    height: 50%;  
     overflow-y: auto;  
 }

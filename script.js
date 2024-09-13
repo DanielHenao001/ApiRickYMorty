@@ -1,19 +1,16 @@
 const obtenerPersonaje = () => {
     let inputTexto = document.getElementById("input_personaje");
     let valor = inputTexto.value.trim().toLowerCase();
-    if (valor) {
-        peticionApi(valor);
-    } else {
-        alert("Por favor, ingresa un nombre de personaje.");
-    }
+    peticionApi(valor);
 }
 
 const peticionApi = (personaje) => {
     const baseUrl = 'https://rickandmortyapi.com/api/character/';
+    const endpoint = ''
     const url = `${baseUrl}?name=${personaje}`;
 
     axios.get(url)
-    .then(res => printData(res.data.results))
+    .then(res => printData(res.data))
     .catch(err => {
         console.log(err);
         document.getElementById('show-info').innerHTML = "Personaje no encontrado.";
